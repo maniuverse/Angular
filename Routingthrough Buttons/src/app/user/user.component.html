@@ -1,0 +1,6 @@
+<div class="mb-2"><h3>Users List</h3> 
+<a routerLink="/users/user">Add New</a></div>
+<div *ngFor="let user of appService.users" class="mb-2">
+	<div routerLink="/users/{{user.id}}">Name: {{user.name}}</div>
+	<div>Address: {{user.address}}</div>
+</div>
